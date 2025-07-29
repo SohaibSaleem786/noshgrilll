@@ -1,0 +1,90 @@
+body {
+  font-family: Verdana !important;
+  font-size: 12px;
+}
+
+/* .sign-in {
+	font-size: 12px !important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	font-weight: bold !important;
+	color: black !important;
+} */
+
+/* th {
+  border: 1px solid rgb(223, 223, 223) !important;
+  color: var(--primary-color) !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  color: white !important;
+  white-space: nowrap !important;
+  padding: 3px 2px !important;
+  position: sticky !important;
+  z-index: 999 !important;
+} */
+
+.custom-header {
+  padding: 8px;
+  /* Adjust as needed */
+  margin: 0;
+}
+
+/* .daily-salerat {
+	width: 70px !important;
+	text-align: right !important;
+} */
+
+/* .list-same-col-width {
+	width: 70px !important;
+} */
+
+/* .daily-col-amount {
+	width: 70px !important;
+	text-align: right !important;
+} */
+
+/* .supplier-col-amount {
+	width: 50px !important;
+} */
+
+.table-col-style {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* .no-flex {
+	display: block !important;
+	Override display property
+	Additional styles if needed
+} */
+
+/* .sticky-bottom-row {
+	position: sticky;
+	bottom: 0;
+	background-color: #ffffff;
+} */
+
+/* .table-col-item-description {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	text-align: left !important;
+} */
+
+td {
+  padding: 0px 2px !important;
+  font-size: 12px !important;
+  border: 1px solid rgb(223, 223, 223) !important;
+  text-align: center;
+  font-family: Verdana !important;
+  height: 20px !important;
+}
+
+tr.selected-row td {
+  background-color: lightblue !important;
+  font-weight: bold !important;
+}
+
+thead {
+  position: sticky !important;
+  background-color: rgb(235, 135, 64) !important;
+}

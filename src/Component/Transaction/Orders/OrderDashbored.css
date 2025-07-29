@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  /* Change card width to 50% for small screens (2 cards per row) */
+  .cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cards > .MuiCard-root {
+    width: calc(100% - 16px); /* Adjust margins as needed */
+    margin: 8px;
+  }
+}
+.menu-container {
+  position: relative;
+}
+
+.three-dot-icon {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu div:hover {
+  background-color: #f0f0f0;
+}
+
+.menu hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.td {
+  padding: 0px 2px !important;
+  font-size: 12px !important;
+  border: 1px solid rgb(223, 223, 223) !important;
+  text-align: center;
+  font-family: Verdana !important;
+  height: 20px !important;
+}
+/* Add this to your stylesheet */
+.hover-card:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  cursor: pointer;
+}
+
+/* Add this to your stylesheet */
+.hover-card {
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+/* Add this to your stylesheet */
+/* Customize the modal styles as needed */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(156, 156, 156, 0.2);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hover-category:hover {
+  transform: scale(1.05); /* Increase the size on hover */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  cursor: pointer;
+}
+
+/* Add this to your stylesheet */
+.hover-category {
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+/* Add the following CSS to your stylesheet or in the style section of your component */
+
+@media (min-height: 80vh) {
+  .secondcol {
+    max-height: 90vh; /* Set the maximum height to 80vh */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    overflow-x: hidden;
+  }
+}
+
+/* styles.css or your styling file */
+.smallFontSize {
+  font-size: 10px;
+}

@@ -1,0 +1,57 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #ffb200; /* Adds a border around the entire table container */
+  border-radius: 8px; /* Rounds the corners of the border */
+  overflow: hidden; /* Ensures child elements don't overflow outside the border */
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffb200; /* Enhances the row separation border color */
+  padding: 10px; /* Adds more padding for a better look */
+}
+
+.table-cell {
+  flex: 1; /* Distributes space equally among cells */
+  text-align: center;
+  padding: 10px; /* Adds more padding for better spacing */
+  border-right: 1px solid #ffb200; /* Adds a right border to each cell for separation */
+}
+
+.table-cell:last-child {
+  border-right: none; /* Removes the right border from the last cell in each row */
+}
+
+.first {
+  width: 10px; /* Adjust as needed */
+  text-align: center;
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.second {
+  width: 150px; /* Adjust as needed */
+  text-align: left;
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.third {
+  width: 40px; /* Adjust as needed */
+  text-align: right;
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.fourth {
+  width: 20px; /* Adjust as needed */
+  text-align: center;
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.fifth {
+  width: 40px; /* Adjust as needed */
+  text-align: right;
+  font-size: 10px; /* Adjust font size as needed */
+}

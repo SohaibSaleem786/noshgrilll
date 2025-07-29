@@ -1,0 +1,90 @@
+/* Container Styling */
+.sales-order-container {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Header Title Styling */
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffb200;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card Styling */
+.custom-card {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #ffb200;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field Styling */
+.input-field {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffb200;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 5px 2px #ffb200;
+}
+
+/* Button Styling */
+.custom-button {
+  background-color: #ffb200;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #e0a900;
+}
+
+/* Table Styling */
+.custom-table {
+  /* background-color: #222; */
+  color: #000000;
+  border: 1px solid #ffb200;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ffb200;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Modal Styling */
+.custom-modal .modal-content {
+  background-color: #333;
+  color: #fff;
+}
+
+.modal-header-custom {
+  background-color: #222;
+  border-bottom: 1px solid #ffb200;
+  color: #ffb200;
+}
+
+.modal-footer-custom {
+  background-color: #222;
+  border-top: 1px solid #ffb200;
+}

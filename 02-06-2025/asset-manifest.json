@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/noshgrilll/static/css/main.e8b386aa.css",
+    "main.js": "/noshgrilll/static/js/main.ec8afa95.js",
+    "static/js/498.c0385572.chunk.js": "/noshgrilll/static/js/498.c0385572.chunk.js",
+    "static/js/703.4917bfd6.chunk.js": "/noshgrilll/static/js/703.4917bfd6.chunk.js",
+    "static/js/513.c93c3959.chunk.js": "/noshgrilll/static/js/513.c93c3959.chunk.js",
+    "static/media/image1.jpeg": "/noshgrilll/static/media/image1.041fad63a45bd19bc5a4.jpeg",
+    "static/media/image3.jpeg": "/noshgrilll/static/media/image3.442f653bf6bfc4f33d0a.jpeg",
+    "static/media/metal.jpg": "/noshgrilll/static/media/metal.49f05fd5f339fd3400e9.jpg",
+    "static/media/mixkit-happy-bells-notification-937.wav": "/noshgrilll/static/media/mixkit-happy-bells-notification-937.72d5668f672aa6c30075.wav",
+    "static/media/image2.jpeg": "/noshgrilll/static/media/image2.433e982dac0921c7b922.jpeg",
+    "static/media/cheifkitchen.png": "/noshgrilll/static/media/cheifkitchen.0f43097c7f09783288dd.png",
+    "static/media/itc.png": "/noshgrilll/static/media/itc.55632e5697193a056e52.png",
+    "static/media/homeapp.png": "/noshgrilll/static/media/homeapp.83e9d373cf98d66d3857.png",
+    "static/media/technician.png": "/noshgrilll/static/media/technician.28d83e0017cb5ba0e75c.png",
+    "static/media/keys.png": "/noshgrilll/static/media/keys.c87af3db0ab80c85a3d9.png",
+    "static/media/Crystal_info.jpeg": "/noshgrilll/static/media/Crystal_info.9a2f513e9bfee01f33cd.jpeg",
+    "static/media/grmetal.png": "/noshgrilll/static/media/grmetal.78ca97f91a87058a280e.png",
+    "static/media/bin.png": "/noshgrilll/static/media/bin.c4f0af28c10a19fbeee1.png",
+    "static/media/logowithname.jpeg": "/noshgrilll/static/media/logowithname.e831a235b42a41bf1b0c.jpeg",
+    "static/media/notification.svg?s3g3t9": "/noshgrilll/static/media/notification.5d0158671dd860c714c4.svg",
+    "static/media/notification.eot": "/noshgrilll/static/media/notification.3657084dc0419605a91c.eot",
+    "index.html": "/noshgrilll/index.html",
+    "static/media/notification.woff?s3g3t9": "/noshgrilll/static/media/notification.c392cd33d9d9de730f9d.woff",
+    "static/media/notification.ttf?s3g3t9": "/noshgrilll/static/media/notification.c5d9251ea82e42f75381.ttf",
+    "main.e8b386aa.css.map": "/noshgrilll/static/css/main.e8b386aa.css.map",
+    "main.ec8afa95.js.map": "/noshgrilll/static/js/main.ec8afa95.js.map",
+    "498.c0385572.chunk.js.map": "/noshgrilll/static/js/498.c0385572.chunk.js.map",
+    "703.4917bfd6.chunk.js.map": "/noshgrilll/static/js/703.4917bfd6.chunk.js.map",
+    "513.c93c3959.chunk.js.map": "/noshgrilll/static/js/513.c93c3959.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8b386aa.css",
+    "static/js/main.ec8afa95.js"
+  ]
+}

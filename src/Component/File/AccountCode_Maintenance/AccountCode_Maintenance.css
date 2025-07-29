@@ -1,0 +1,247 @@
+.form-control-account {
+  background-color: rgb(255, 255, 255) !important;
+  height: 24px !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  margin-bottom: 4px;
+  margin-left: -10px !important;
+}
+.btn-primary-account {
+  margin-right: 2px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+  font-size: 11px;
+  width: 85px;
+  height: 30px;
+  font-weight: bold;
+  /* background-color: #1f2670; */
+  background-color: rgb(204, 204, 204);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 0px;
+  /* box-shadow: 0px 0px 8px #0080ff; */
+  transition: background-color 0.8s;
+}
+
+.account-field {
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+}
+.form-accountcode-container {
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  padding: 0px;
+  /* box-shadow: 0px 0px 20px #113f8f; */
+  width: 100%;
+  max-width: 620px;
+  /* height: "10vh"; */
+  margin: "20px 0";
+  font-size: 12px;
+  border: 1px solid black;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  */
+.Account-table {
+  margin-top: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+  max-width: 50%;
+  height: 77vh;
+  border: 1px solid black;
+  background-color: white;
+}
+.scrol {
+  overflow-y: auto;
+  max-height: 60vh;
+}
+.Picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Account-table .search-account {
+    display: flex;
+    align-items: end;
+    /* margin-left: 220%; */
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 458px) {
+  .scroll-account {
+    overflow-y: auto;
+    max-height: 220px;
+  }
+  .Account-table .search {
+    margin-left: 3px;
+  }
+  .form-accountcode-container {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0px 0px 20px #113f8f; */
+    width: 100%;
+    max-width: 580px;
+    margin: "20px 0";
+    font-size: 12px;
+    border: 1px solid black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-container {
+    margin-top: 5px;
+  }
+  .form-booking-container .scroll {
+    overflow-y: auto;
+    height: 220px;
+  }
+  .account-field {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .Account-table {
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 96%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  .input-account {
+    margin-left: 2%;
+  }
+  .Picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+  }
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: 1px solid #000000;
+  padding: 2px 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.custom-select:hover {
+  border-color: #423b88;
+}
+
+.custom-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* Small screen styles */
+@media (max-width: 767px) {
+  .Category {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+  }
+}
+
+/* Large screen styles */
+@media (min-width: 768px) {
+  .Category {
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
+  }
+}
+.sticky-header-area {
+  box-sizing: 0px 0px 3px black;
+  border-right: 1px solid black;
+  background-color: #c6daf7;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border: 1px solid black;
+}
+
+.custom-table-area {
+  display: block;
+  max-height: 67vh;
+  overflow-y: auto;
+}
+
+.custom-table-area thead,
+.custom-table-area tfoot {
+  display: block;
+  background: white;
+  position: sticky;
+  border-bottom: 1px solid black;
+}
+
+.custom-table-area thead {
+  top: 0;
+  height: 20px;
+}
+
+.custom-table-area tfoot {
+  bottom: 0;
+  height: 20px;
+}
+
+.custom-table-area th,
+.custom-table-area td {
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  height: 20px;
+  border: 1px solid black;
+  padding: 0;
+  text-align: left;
+  /* min-width: 100px; */
+}
+
+.custom-table-area td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  /* min-width: 100px; */
+}
+
+.sticky-footer-area {
+  box-sizing: 0px 0px 3px black;
+  border-right: 1px solid black;
+  background-color: #c6daf7;
+  position: sticky;
+  top: 1;
+  /* z-index: 1; */
+  border: 1px solid black;
+}
+.form-control-account:focus {
+  background-color: rgb(56, 56, 56);
+  border-color: #000; /* Change this to the dark color you prefer */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow effect */
+}
+.css-1hb7zxy-IndicatorsContainer {
+  font-size: 10px !important;
+  align-items: center !important;
+  height: 24px !important;
+}
+
+.css-b62m3t-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
