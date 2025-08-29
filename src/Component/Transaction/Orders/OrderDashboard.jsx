@@ -681,6 +681,7 @@ const Order_Dashboard = () => {
   const handleButtonClick1 = () => {
     setDataOrderTypeeee1(dataOrderType1 === "1" ? "2" : "1");
     setDataOrderTypeeee("2");
+    setSelectedCategory1("2");
   };
 
   const [selectedRow, setSelectedRow] = useState(null);
@@ -691,6 +692,8 @@ const Order_Dashboard = () => {
       setShowOrderList(!showOrderList);
       // setDataOrderTypeeee(showOrderList ? "1" : "2");
       setDataOrderTypeeee1("1");
+    setSelectedCategory1("1");
+
 
       // setNewOrderData(row);
     } else {
@@ -725,6 +728,15 @@ const Order_Dashboard = () => {
     console.log("order id shwofsdf", row);
     setMobile(row.tmobnum);
     setAddress(row.address);
+    if(row.dvdsc ==="DELIVERY"){
+        setSelectedCategory1("1");
+
+    }else if(row.dvdsc ==="DINING"){
+        setSelectedCategory1("2");
+    }else if(row.dvdsc ==="TAKEAWAY"){
+        setSelectedCategory1("3");
+    }
+
     setDataOrderTypeeee("3");
     if (selectedRow === row.id) {
       setShowOrderList(!showOrderList);
@@ -879,10 +891,10 @@ const Order_Dashboard = () => {
     }
   };
   const handleRadioChange1 = (e) => {
-    setSelectedCategory1(e.target.value);
     if (e.target.value === "1") {
       setButtonLabel("Delivery");
       handleShowDeliveryModal();
+      
     } else if (e.target.value === "2") {
       setButtonLabel("Dining");
       handleShowDiningModal();
@@ -2818,6 +2830,7 @@ const Order_Dashboard = () => {
                 newOrderData={newOrderData}
                 detailItem={detailItem}
                 priceDiscount={priceDiscount}
+                selectedCategory1={selectedCategory1}
                 percentageDiscount={percentageDiscount}
                 totalAmount={totalAmount}
               />
@@ -2834,6 +2847,8 @@ const Order_Dashboard = () => {
                 newOrderData={newOrderData}
                 detailItem={detailItem}
                 priceDiscount={priceDiscount}
+                selectedCategory1={selectedCategory1}
+
                 percentageDiscount={percentageDiscount}
                 totalAmount={totalAmount}
               />
@@ -2850,6 +2865,8 @@ const Order_Dashboard = () => {
                 newOrderData={newOrderData}
                 detailItem={detailItem}
                 priceDiscount={priceDiscount}
+                selectedCategory1={selectedCategory1}
+
                 percentageDiscount={percentageDiscount}
                 totalAmount={totalAmount}
               />
@@ -2866,6 +2883,8 @@ const Order_Dashboard = () => {
                 newOrderData={newOrderData}
                 detailItem={detailItem}
                 priceDiscount={priceDiscount}
+                selectedCategory1={selectedCategory1}
+
                 percentageDiscount={percentageDiscount}
                 totalAmount={totalAmount}
               />
@@ -2887,7 +2906,10 @@ const Order_Dashboard = () => {
               <div className="col-2">
                 <button
                   className="btn btn-primary"
-                  onClick={() => setDataOrderTypeeee1("6")}
+                  onClick={() => {
+                    setDataOrderTypeeee1("6");
+                    setSelectedCategory1("1");
+                  }}
                   style={buttonStyles}
                 >
                   Delivery
@@ -2896,7 +2918,10 @@ const Order_Dashboard = () => {
               <div className="col-2">
                 <button
                   className="btn btn-primary"
-                  onClick={() => setDataOrderTypeeee1("4")} // Pass a function reference
+                  onClick={() => {
+                    setDataOrderTypeeee1("4");
+                    setSelectedCategory1("2");
+                  }} 
                   style={buttonStyles}
                 >
                   Dining
@@ -2906,7 +2931,10 @@ const Order_Dashboard = () => {
                 <button
                   className="btn btn-primary"
                   style={buttonStyles}
-                  onClick={() => setDataOrderTypeeee1("3")} // Pass a function reference
+                  onClick={() => {
+                    setDataOrderTypeeee1("3");
+                    setSelectedCategory1("3");
+                  }} 
                 >
                   Take Away
                 </button>
@@ -2914,7 +2942,10 @@ const Order_Dashboard = () => {
               <div className="col-2">
                 <button
                   className="btn btn-primary"
-                  onClick={() => setDataOrderTypeeee1("5")}
+                  onClick={() => {
+                    setDataOrderTypeeee1("5");
+                    setSelectedCategory1("4");
+                  }} 
                   style={buttonStyles}
                 >
                   Car
@@ -2941,7 +2972,7 @@ const Table = ({
   newOrderData,
   detailItem,
   priceDiscount,
-  percentageDiscount,
+  percentageDiscount,selectedCategory1,
   totalAmount,
 }) => {
   const receiptRef = useRef();
@@ -2994,7 +3025,10 @@ const Table = ({
                 <td>
                   <button
                     className="btn btn-primary"
-                    onClick={() => showItemsAndAddItem(row)}
+                    onClick={() => {
+    console.log("Row Data:", row);  // 👈 show in console
+    showItemsAndAddItem(row);       // 👈 your function still runs
+  }}
                     style={{
                       backgroundColor: primaryColor,
                       height: "24px",

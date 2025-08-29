@@ -100,15 +100,15 @@ const Receipt = forwardRef(
               src={logo}
               alt="logo"
               style={{
-                height: "55px", // Slightly larger for better visibility
-                width: "55px",
-                marginRight: "10px", // Adds space between the logo and text
+                height: "90px", // Slightly larger for better visibility
+                width: "90px",
+                marginRight: "5px", // Adds space between the logo and text
               }}
             />
             <p
               style={{
                 margin: 0,
-                fontSize: "20px", // Increases the font size for better readability
+                fontSize: "25px", // Increases the font size for better readability
                 fontWeight: "bold", // Makes the text bold
                 color: "#333", // Adds a dark grey color for better contrast
                 display: "flex",
@@ -165,7 +165,9 @@ const Receipt = forwardRef(
                 ? "Delivery"
                 : selectedCategory1 === "2"
                 ? "Dining"
-                : "Take Away"}
+                : selectedCategory1 === "3"
+                ? "Take Away"
+                : "Car"}
             </p>
           </div>
         </div>
